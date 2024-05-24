@@ -5,10 +5,10 @@ namespace GuessingNumberGame.Services
 {
     public class GameService : IGameService
     {
-        private GameState _gameState;
-        private Settings _gameSettings;
+        private IGameState _gameState;
+        private ISettings _gameSettings;
 
-        public void StartGame(Settings settings)
+        public void StartGame(ISettings settings)
         {
             _gameSettings = settings;
             _gameState = new GameState
@@ -33,7 +33,7 @@ namespace GuessingNumberGame.Services
             return "ПОЗДРАВЛЯЕМ, Вы угадали число.";
         }
 
-        public GameState GetGameState()
+        public IGameState GetGameState()
         {
             return _gameState;
         }

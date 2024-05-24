@@ -1,6 +1,8 @@
-﻿namespace GuessingNumberGame.Models
+﻿using GuessingNumberGame.Interfaces;
+
+namespace GuessingNumberGame.Models
 {
-    public class GameState
+    public class GameState : IGameState
     {
         public int TargetNumber { get; set; }
         public int Attempts { get; set; }

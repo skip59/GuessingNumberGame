@@ -4,8 +4,8 @@ namespace GuessingNumberGame.Interfaces
 {
     public interface IGameService
     {
-        void StartGame(Settings settings);
+        void StartGame(ISettings settings);
         string Guess(int guess);
-        GameState GetGameState();
+        IGameState GetGameState();
     }
 }

@@ -1,8 +1,6 @@
-﻿using GuessingNumberGame.Interfaces;
-
-namespace GuessingNumberGame.Models
+﻿namespace GuessingNumberGame.Interfaces
 {
-    public class Settings : ISettings
+    public interface ISettings
     {
         public int MinNumber { get; set; }
         public int MaxNumber { get; set; }
