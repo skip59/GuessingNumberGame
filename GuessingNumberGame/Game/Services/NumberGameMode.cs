@@ -11,7 +11,7 @@ namespace GuessingNumberGame.Game.Services
        public void StartGame()
         {
             Console.WriteLine(Environment.NewLine);
-            Console.WriteLine("Вы выбрали игру Угадай число");
+            Console.WriteLine("Вы выбрали игру 'Угадай число'");
             Console.WriteLine("Задайте настройки игры");
 
             var settings = new Settings();
@@ -41,7 +41,7 @@ namespace GuessingNumberGame.Game.Services
                     Console.WriteLine("Не верный ввод. Повторите попытку");
                 }
             }
-            if (game.GetGameState().Attempts == 0) Console.WriteLine("Игра окночена!");
+            if (game.GetGameState().Attempts == 0) Console.WriteLine("Игра окончена!");
         }
     }
 }

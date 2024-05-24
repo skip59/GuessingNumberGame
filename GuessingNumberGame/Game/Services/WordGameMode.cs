@@ -11,7 +11,7 @@ namespace GuessingNumberGame.Game.Services
        public void StartGame()
         {
             Console.WriteLine(Environment.NewLine);
-            Console.WriteLine("Вы выбрали игру Угадай слово");
+            Console.WriteLine("Вы выбрали игру 'Угадай слово'");
             Console.WriteLine("Задайте настройки игры");
 
             var settings = new SettingsGuessWord();
@@ -20,7 +20,7 @@ namespace GuessingNumberGame.Game.Services
             settings.MaxAttempts = int.TryParse(Console.ReadLine(), out int resultAttempts) ? resultAttempts : 0;
 
             Console.WriteLine(Environment.NewLine);
-            Console.WriteLine("Перед вами набор слов, я загадал это слово. Попробуй угадать?");
+            Console.WriteLine("Перед вами набор слов, я загадал одно из них. Попробуй угадать?");
 
             gameGuessWord.StartGame(settings);
 

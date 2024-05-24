@@ -7,7 +7,7 @@ namespace GuessingNumberGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Добро пожаловать в игру Угадай число или слово");
+            Console.WriteLine("Добро пожаловать в игру 'Угадай число или слово'");
             Console.WriteLine("Во что будем играть в числа или слова? Укажите 1 если в числа, 2 в слова");
             if(int.TryParse(Console.ReadLine(), out int result))
             {
